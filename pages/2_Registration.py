@@ -4,7 +4,7 @@
 # ---------------------------------------------------------
 
 import streamlit as st 
-import datetime 
+
 
 
 st.header('   Registraition Tabs :    :memo: :white_check_mark:')
@@ -18,7 +18,7 @@ with tab1 :
     st.write (" please enter your informations :")
     Firstname = st.text_input (" enter your firstname :")
     Lastname = st.text_input (" enter your lastname :")
-    Age = st.slider('enter your age : ' ,0,130,25)
+    Age = st.slider('enter your age : ' ,0,100,25)
 
     button1 = st.button (" confirm .", key="confirm_button_1")
     if button1 == True :
@@ -69,6 +69,7 @@ with tab2 :
     "Istanbul Airport, Istanbul"
     ] 
     DEPARTURE = st.selectbox (' enter your departure airport :   ' , options=airports)
+    airports.remove(DEPARTURE)    
     DESTINATION = st.selectbox (' enter your destination airport : ' , options=airports)
 
      # ---------------------------------------------------------
@@ -82,7 +83,7 @@ with tab2 :
      #                   PRIORITY OPTIONS 
      # ---------------------------------------------------------
     st.write (" choose which standard you prioritize or prefer  :")
-    button_A = st.button ("SPEED ")
+    button_A = st.button ("price  ")
     if button_A == True :  
        st.write("1_Transavia : Popular low-cost airline in Europe and North Africa")
        st.write("2_Vueling : Spanish budget carrier serving Europe and North Africa")

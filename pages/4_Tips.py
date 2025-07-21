@@ -35,7 +35,7 @@ with st.expander('TIPS AND TRICS ') :
          button = st.button("tip")
          if button==True :
             for tip in random_tips:
-              st.write ( {tip}) 
+              st.write (tip) 
          else :
              st.write (" click to pick .")
 
