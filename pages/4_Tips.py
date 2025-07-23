@@ -29,8 +29,7 @@ tips= [
                          ]
         
 random_tips = random.sample(tips,1)           
-with st.expander('TIPS AND TRICS ') :
-    with st.container (border=True) :
+with st.container (border=True) :
          st.subheader ("this expander  offers you some essentiel tips and trics to ensure a safe efficient and comfortebl flight : ")
          button = st.button("tip")
          if button==True :
